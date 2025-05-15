@@ -1,10 +1,10 @@
 #Message Generator
 ===================
 
-###Description: 
+### Description: 
 This objective for this project is to create a message generator that will give out random snippets of advice.
 
-###How to use:
+### How to use:
 You will run the app using NODE.js in your terminal command line.
 
 ### Technologies:
