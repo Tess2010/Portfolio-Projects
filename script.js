@@ -5,7 +5,7 @@ const wisdom = {
     fortune: ['good luck','ok luck','fantastic luck','bad luck','terrible luck'],
     advice: ['trust no one','eat all the sweets','go ot and enjoy nature','bake a cake','take this lightly','call a friend']
 };
-
+//Created a function to output random wisdom each time
 function getDailyWisdom() {
   // Select a random sign from wisdom.sign
   const randomSignIndex = Math.floor(Math.random() * wisdom.sign.length);
