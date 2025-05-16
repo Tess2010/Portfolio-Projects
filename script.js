@@ -4,8 +4,6 @@ function generateRandomNumber(num) {
     return Math.floor(Math.random()* num)
 };
 
-//Arrays to be iterated through, to create the message.
-
 
 
 
