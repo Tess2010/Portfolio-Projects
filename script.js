@@ -1,14 +1,27 @@
 
-//Created this function to select a random number from 0 - 6
-function generateRandomNumber(num) {
-    return Math.floor(Math.random()* num)
+//Create the arrays for the wisdom
+const wisdom = {
+    sign: ['star','moon','comet','sun','black hole'],
+    fortune: ['good luck','ok luck','fantastic luck','bad luck','terrible luck'],
+    advice: ['trust no one','eat all the sweets','go ot and enjoy nature','bake a cake','take this lightly','call a friend']
 };
 
+function getDailyWisdom() {
+  // Select a random sign from wisdom.sign
+  const randomSignIndex = Math.floor(Math.random() * wisdom.sign.length);
+  const randomSign = wisdom.sign[randomSignIndex];
 
+  // Select a random fortune from wisdom.fortune
+  const randomFortuneIndex = Math.floor(Math.random() * wisdom.fortune.length);
+  const randomFortune = wisdom.fortune[randomFortuneIndex];
 
+  // Select a random advice from wisdom.advice
+  const randomAdviceIndex = Math.floor(Math.random() * wisdom.advice.length);
+  const randomAdvice = wisdom.advice[randomAdviceIndex];
 
-// This is the array that will be used to display the personal message.
-let personalWisdom  = [yourSign, fortune, advice]
+  // Build and return the final sentence.
+  return `You are a ${randomSign}. Your fortune is ${randomFortune} and your advice is ${randomAdvice} today!`;
+}
 
-//Arrays to be iterated through, to create the message.
-for (let )
+// Example usage:
+console.log(getDailyWisdom());
